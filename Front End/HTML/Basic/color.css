@@ -1,6 +1,13 @@
+html{
+	font-size: 30px;
+}
 #div1{
-	height: 200px;
-	width: 200px;
+	height: 4rem;
+	/*75vh;*/
+	/*200px;*/
+	width: 6rem;
+	/*100vw;*/
+	/*200px;*/
 	background-color:red;
 	/*hsla();*/
 	/*hsl()*/
@@ -8,4 +15,9 @@
 	/*rgba(29,67,120,0.7);*/
 	/*a=opacity*/
 	/*red;*/
+}
+#div2{
+	height: 50%;
+	width: 50%;
+	background-color: green;
 }
