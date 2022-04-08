@@ -1,0 +1,12 @@
+#sample-para{
+	font-size: 30px; /*use to increase the font size */
+	color: red;/*text should be red color:*/ 
+	font-weight: bolder;
+	/*normal;*/
+	/*bold;*/
+	text-align: justify; /*text aline clearly to justify*/
+	line-height: 40px;/*space add between two lines*/
+	word-spacing: 2px;/*space add between two words*/
+	text-transform: uppercase;/*Every words go Captail lette*/
+	text-decoration: underline;
+}
