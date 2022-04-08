@@ -1,0 +1,21 @@
+#outer-div1{
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	/*margin: 4px 10px 30px 20px;*/
+	/*margin:auto;means no margin added any direction:*/ 
+	margin-top: 10px;
+	/*margin-right: this value added both side and than add margin-right*/
+	margin-bottom: 20px;/*bottom value not both side value to added only first side value added which is grater than div1 or div2*/
+}
+#inner-div1{
+	height: 50%;
+	width: 50%;
+	background-color: green;
+}
+#outer-div2{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+	margin-top: 10px; /*bottom value not both side value to added only first side value added which is grater than div1 or div2*/
+}
