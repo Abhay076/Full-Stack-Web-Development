@@ -7,6 +7,7 @@
 	margin-top: 10px;
 	/*margin-right: this value added both side and than add margin-right*/
 	margin-bottom: 20px;/*bottom value not both side value to added only first side value added which is grater than div1 or div2*/
+    padding: 10px 5px 11px 9px;
 }
 #inner-div1{
 	height: 50%;
@@ -19,3 +20,10 @@
 	background-color: blue;
 	margin-top: 10px; /*bottom value not both side value to added only first side value added which is grater than div1 or div2*/
 }
+
+/* 
+
+    margin always give space between elements
+
+
+ */
