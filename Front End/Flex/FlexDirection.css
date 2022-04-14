@@ -1,0 +1,38 @@
+#container{
+    height: 75vh;
+    width: 75vh;
+    background-color: lightgrey;
+    display: flex; /*The flex property sets the flexible length on flexible items.*/
+   /* flex-direction: column; => set the flex direction: in column 
+    wise by default already set direction in
+    row wise;*/
+    /*flex-direction: row;*/
+    /*flex-direction: row-reverse; => Reverse the elment in row direction: */
+    /*flex-direction: column-reverse; => Reverse the elemnt in columns: direction*/
+    flex-direction: row;
+}
+#container div{
+    height: 200px;
+    width: 200px;
+}
+
+#div1{
+    background-color: cyan;
+    order: 1; /*This is means to set the order that is which elemnt which position to come first*/
+}
+
+
+#div2{
+    background-color: red;
+}
+
+
+#div3{
+    background-color: grey;
+    order: 5;
+}
+
+#div4{
+    background-color: maroon;
+    order: -1;
+}
