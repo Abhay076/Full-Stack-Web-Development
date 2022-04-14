@@ -1,0 +1,6 @@
+#container{
+	height: 75vh;
+	width: 75vh;
+	position: flex;/*The flex property sets the flexible length on flexible items.*/
+	background-color: red;
+}
