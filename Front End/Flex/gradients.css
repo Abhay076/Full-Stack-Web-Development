@@ -5,4 +5,5 @@
 	/*background-image: linear-gradient(120deg,red,cyan,blue);*/
 	/*background:repeating-linear-gradient(red, blue);*/
 	background:radial-gradient(red,cyan,blue);
+	/*background-color: linear-gradient(red, blue);*/
 }
