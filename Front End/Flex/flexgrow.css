@@ -1,6 +1,6 @@
 #container{
 	height: 500px;
-	width: 500px;
+	width: 300px;
 	background-color: lightgrey;
 	display: flex;
 }
@@ -11,8 +11,10 @@
 #div1{
 	background-color: red;
 	flex-grow: 4;
+	flex-shrink: 4;
 }
 #div2{
 	background-color: yellow;
 	flex-grow: 1;
+	flex-shrink: 1;
 }
