@@ -10,8 +10,8 @@
 }
 #div1{
 	background-color: red;
-	flex-grow: 4;
-	flex-shrink: 4;
+	flex-grow: 4;/*means to expands out of 5 (4/5) to block*/ 
+	flex-shrink: 4;/*means to reduced body to out of 5 (4/5)*/
 }
 #div2{
 	background-color: yellow;
