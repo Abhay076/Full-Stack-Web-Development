@@ -6,4 +6,5 @@ a:active{
 }
 a:visited{
 	color: green;
+	overflow-wrap: b
 }
