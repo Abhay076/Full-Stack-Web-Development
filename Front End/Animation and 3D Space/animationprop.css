@@ -1,0 +1,29 @@
+
+@keyframes changeSpace{
+	0%{
+		border-radius: 0%;
+
+	}
+	20%{
+		border-radius: 17%;
+	}
+	50%{
+		border-radius: 20%;
+	}
+	100%{
+		border-radius: 50%;
+	}
+}
+
+
+
+div{
+	height: 200px;
+	width: 200px;
+	top: 40%;
+	left: 40%;
+	position: absolute;
+	background-color: aquamarine;
+	animation: changeSpace 1s ease-in-out 4 alternate;
+
+}
