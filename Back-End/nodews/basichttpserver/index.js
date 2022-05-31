@@ -1,11 +1,20 @@
 var http = require('http');
 
 const port=8000;
-
+ const fs=require('fs');
 function requestHandler(req,res){
     console.log(req.url);
+    res.writeHead(200,{'content-type':'text/html'});
 
-    res.end('Hellow World!')
+     fs.readFile('./index.html',function(err,data){
+         if(err){
+             console.log('Error',err);
+            return res.end('<h1>error</h1>');
+         }
+         return res.end(data);
+     })
+
+    // res.end('<h1>Hello World!</h1>');
 
 }
 
