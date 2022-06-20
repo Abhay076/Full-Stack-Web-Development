@@ -26,6 +26,15 @@ body{
     justify-content: space-between;
     width: 90%;
 }
+.contact .delete-contacts{
+    width: 10%;
+    /* padding: 3px; */
+    text-align: center;
+    margin-top: 5px;
+}
+.contact .delete-contacts a{
+    color: white;
+}
 .contact p{
     margin: 5px 0;
 }

@@ -23,6 +23,11 @@
                        <p><%= i.name %></p>
                        <p><%= i.phone %></p>
                        </div>
+                       <div class="delete-contacts">
+                           <a href="delete-contact/?phone=<%= i.phone %>">
+                            <i class="fa fa-trash-o"></i>
+                           </a>
+                       </div>
                    </li>
             <% } %>
         </ul>

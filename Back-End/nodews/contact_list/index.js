@@ -40,6 +40,16 @@ app.get('/practice',function(req,res){
     return res.render('practice',{title:"This is Practice Pages"});
 })
 
+app.get('/delete-contact', function(req,res){
+    //  console.log(req.query);
+     let phone=req.query.phone;
+     let contactIndex = contactList.findIndex(contact => contact
+        .phone == phone);
+    if(contactIndex!=-1){
+        contactList.splice(contactIndex,1);
+    }
+    return res.redirect('back');
+})
 app.post('/create-contact',function(req,res){
     // return res.redirect('/practice');
     contactList.push({
