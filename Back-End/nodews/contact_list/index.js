@@ -7,7 +7,8 @@ const app = express();
 app.set('view engine','ejs');
 
 app.set('views',path.join(__dirname,'views'));
-
+ 
+app.use(express.urlencoded());
 var contactList = [
     {
         name:"Abhay Yadav",
@@ -39,7 +40,12 @@ app.get('/practice',function(req,res){
 })
 
 app.post('/create-contact',function(req,res){
-    return res.redirect('/practice');
+    // return res.redirect('/practice');
+    contactList.push({
+        name:req.body.name,
+        phone:req.body.phone
+    });
+    return res.redirect('/');
 })
 
 app.listen(port,function(err){
