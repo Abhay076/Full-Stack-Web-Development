@@ -8,12 +8,28 @@ app.set('view engine','ejs');
 
 app.set('views',path.join(__dirname,'views'));
 
-
+var contactList = [
+    {
+        name:"Abhay Yadav",
+        phone:"123456789"
+    },
+    {
+        name: "Abhishek Yadav",
+        phone:"9876543210"
+    },
+    {
+        name:"Akshay Yadav",
+        phone:"1020304050"
+    }
+];
 
 app.get('/',function(req,res){
     // console.log(__dirname); to define the path location of file
  
-    return res.render('home',{title:"My Contact List"});
+    return res.render('home',{
+        title:"Contact List",
+        contact_list:contactList
+    });
 
     // res.send('<h1>Cool, it is running! or is it?</h1>')
 });
