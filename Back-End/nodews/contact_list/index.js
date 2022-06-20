@@ -13,9 +13,13 @@ app.set('views',path.join(__dirname,'views'));
 app.get('/',function(req,res){
     // console.log(__dirname); to define the path location of file
  
-    return res.render('home');
+    return res.render('home',{title:"My Contact List"});
 
     // res.send('<h1>Cool, it is running! or is it?</h1>')
+});
+
+app.get('/practice',function(req,res){
+    return res.render('practice',{title:"This is Practice Pages"});
 })
 
 
