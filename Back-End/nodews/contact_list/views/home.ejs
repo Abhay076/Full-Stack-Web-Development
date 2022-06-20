@@ -7,23 +7,31 @@
     <title>
         <%= locals.title %>
     </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <h1>Hello! Rendering page from views</h1>
-    <div>
+    <h1 id="heading-contact">
+        <i class="fa fa-address-book"></i>
+        My Contacts List
+    </h1>
+    <div id="contacts-list-container">
         <ul>
             <% for(let i of contact_list){ %>
-                   <li>
+                   <li class="contact">
+                       <div class="details">
                        <p><%= i.name %></p>
                        <p><%= i.phone %></p>
+                       </div>
                    </li>
             <% } %>
         </ul>
     </div>
-    <form action="create-contact" method="post">
+    <form action="create-contact" method="post" id="new-contact-form">
         <input type="text" name="name" placeholder="Enter the name" required>
         <input type="number" name="phone" placeholder="Enter the phone number" required>
-        <button type="submit">Add Contact</button>
+        <button type="submit" id="buttons">Add Contact</button>
     </form>
+    <script type="text/javascript" src="/js/home.js"></script>
 </body>
 </html>
