@@ -38,6 +38,9 @@ app.get('/practice',function(req,res){
     return res.render('practice',{title:"This is Practice Pages"});
 })
 
+app.post('/create-contact',function(req,res){
+    return res.redirect('/practice');
+})
 
 app.listen(port,function(err){
     if(err){
