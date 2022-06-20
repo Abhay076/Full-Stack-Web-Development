@@ -10,13 +10,19 @@
 </head>
 <body>
       <h1>Hello, This is Abhay Yadav</h1>
+      <ul>
       <% for(let i=1;i<6;i++){ %>
-         <ul>
               <li>
                 <%= i %>
               </li>
-         </ul>
-            
         <% } %>
+      </ul>
+      <% if(true){%>
+           <h1>Hello, you there that is true
+           </h1>
+      <% }
+      else{ %>
+            <p>This is False;</p>
+      <% } %>
 </body>
 </html>
