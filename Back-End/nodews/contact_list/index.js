@@ -53,12 +53,24 @@ app.get('/delete-contact', function(req,res){
 })
 app.post('/create-contact',function(req,res){
     // return res.redirect('/practice');
-    contactList.push({
+    // contactList.push({
+    //     name:req.body.name,
+    //     phone:req.body.phone
+    // });
+    // contactList.push(req.body);
+    Contact.create({
         name:req.body.name,
         phone:req.body.phone
+    },function(err,newContact){
+        if(err){
+            console.log('error in creating a Contact!');
+            return;
+        }
+        console.log('**********',newContact);
+        return res.redirect('back');
     });
-    return res.redirect('/');
-})
+    // return res.redirect('/');
+});
 
 app.listen(port,function(err){
     if(err){
